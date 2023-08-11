@@ -1,0 +1,106 @@
+/* Estilos gerais */
+body {
+    background-image: url('images/background.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover, 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Playfair Display', serif;
+    color: aliceblue;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Estilos da seção de informações do livro */
+.book-info {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  margin: auto;
+  max-width: 900px; /* Largura máxima da caixa */
+}
+
+.book-info img {
+  max-width: 40%; /* Largura da imagem do livro */
+  height: auto;
+  margin-right: 1rem;
+  animation: fadeIn 4s ease, gentleRotate 10s infinite alternate;
+}
+
+.book-info h3 {
+  margin: 0; /* Remova a margem inferior para alinhar verticalmente com a imagem */
+  font-size: 5rem; /* Tamanho grande */
+  line-height: 1.5; /* Espaçamento entre linhas */
+  white-space: normal; /* Permite que o texto quebre em várias linhas */
+  animation: fadeIn 4s ease;
+}
+
+
+
+/* Defina a animação de fade-in */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Defina a animação de rotação suave e calma */
+@keyframes gentleRotate {
+  0% {
+      transform: rotate(-2deg);
+  }
+  100% {
+      transform: rotate(2deg);
+  }
+}
+/* Estilos do formulário de contato */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #85143a; /* Cor rosa claro */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  margin: auto;
+  max-width: 400px; /* Largura máxima da caixa */
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input, button {
+  width: 100%;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #ffa7dd;
+  color: rgb(43, 43, 43);
+  cursor: pointer;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  width: 105%; /* Largura igual aos campos de entrada */
+}
+
+button:hover {
+  background-color: #b08eff;
+}
+
+
+
+
+  
